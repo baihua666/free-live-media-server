@@ -1,0 +1,66 @@
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## OSX noise
+.DS_Store
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+=======
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# 项目实践中发现如果完全不改第3方框架, 最好移除git管理, 如果确实要修改源码, 则最好不要加到pods中, 或者用间接方式修改, 比如Extension
+Pods/
+# ignore Pods.xcodeproj/project.pbxproj, 因为发现这个文件很可能出现大量的冲突, 导致无法解决, 冲突的原因目前猜测为不同开发者的cocoapods版本不一致
+# Pods/Pods.xcodeproj/
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+#Ingore iOSInjectionProject
+iOSInjectionProject/
