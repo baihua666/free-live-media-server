@@ -19,6 +19,7 @@ rtmp://xl.live-send.acg.tv/live-xl/?streamname=xxx&key=xxx
 将xxx替换后的结果
 rtmp://xl.live-send.acg.tv/live-xl/?streamname=live_277053127_2361311&key=639240e03cbc5137b9856a733481c7c8
 在浏览器上打开直播间地址，右键检查，就能抓到真实的拉流地址。这个办法比较笨，但是比较直接，后面可以改成软件自动抓包分析，或者用爬虫，分析协议的方式做的更智能一些。
+![image](https://raw.githubusercontent.com/abc19abc91/free-live-media-server/master/images/image1.png)
 
 图中有用的信息为
 https%3A%2F%2Fxl.live-play.acgvideo.com%2Flive-xl%2F256070%2Flive_277053127_2361311.flv%3FwsSecret%3Da0c2634900258d5f59a29de3dcd20acd%26wsTime%3D1515998009
@@ -34,8 +35,10 @@ ffmpeg -re -i video1.mp4 -c:v libx264 -preset veryfast -maxrate 3000k \
 推流前要确认点了开启直播按钮，就是说直播间是开的，否则会推流失败，如果成功了，在流星器里面打开直播间地址，就可以看到我们的测试MP4已经在直播出来了。
 3.拉流
 为方便测试，我直接用VLC客户端来做拉流测试。下载VLC客户端并运行
+![image](https://raw.githubusercontent.com/abc19abc91/free-live-media-server/master/images/image2.png)
 
 选择network,输入上面说的拉流地址
+![image](https://raw.githubusercontent.com/abc19abc91/free-live-media-server/master/images/image3.png)
 
 点OPEN
 就可以看到拉取到的测试数据了。
