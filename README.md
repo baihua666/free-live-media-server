@@ -41,6 +41,7 @@ ffmpeg -re -i video1.mp4 -c:v libx264 -preset veryfast -maxrate 3000k \
 ![image](https://raw.githubusercontent.com/abc19abc91/free-live-media-server/master/images/image2.png)
 
 选择network,输入上面说的拉流地址
+
 ![image](https://raw.githubusercontent.com/abc19abc91/free-live-media-server/master/images/image3.png)
 
 点OPEN
