@@ -8,6 +8,7 @@
 注册地址： https://passport.bilibili.com/register/phone.html
  1.1获取注册帐号后的个人信息
 进入开播设置页面：https://link.bilibili.com/p/center/index#/my-room/start-live
+![image](https://raw.githubusercontent.com/abc19abc91/free-live-media-server/master/images/image0.png)
 
 上面几条信息需要保存：
 我的直播间地址http://live.bilibili.com/8167278
